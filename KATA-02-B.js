@@ -23,8 +23,8 @@ let arabicToRomanOneCharacter = number => {
 }
 console.log(arabicToRomanOneCharacter(5));
 
-let arabicToRomanTwoCharacter = character => {
-    switch (character) {
+let arabicToRomanTwoCharacter = number => {
+    switch (number) {
         case 2:
             return "II";
         case 4:
@@ -54,15 +54,15 @@ let arabicToRomanTwoCharacter = character => {
         case 2000:
             return "MM";
         default:
-            if (character >= 3999) {
+            if (number >= 3999) {
                 console.log('Enter a number less than 3999');
             }
     }
 }
-console.log(arabicToRomanTwoCharacter(900));
+console.log(arabicToRomanTwoCharacter(400));
 
-let arabicToRomanThreeCharacter = character => {
-    switch (character) {
+let arabicToRomanThreeCharacter = number => {
+    switch (number) {
         case 3:
             return "III";
         case 30:
@@ -72,7 +72,7 @@ let arabicToRomanThreeCharacter = character => {
         case 3000:
             return "MMM";
         default:
-            if (character >= 3999) {
+            if (number >= 3999) {
                 console.log('Enter a number less than 3999');
             }
     }
