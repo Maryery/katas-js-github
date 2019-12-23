@@ -1,4 +1,4 @@
-/* Crear una función para pasar de números romanos a árabes*/
+/* Create a function to move from Roman to Arabic numbers*/
 
 let romanToArabicOneCharacter = character => {
         switch (character) {
@@ -173,56 +173,3 @@ let convertRoman = roman => {
 }
 
 console.log(convertRoman('MMXIX'));
-
-/* Hacer un validador de números romanos*/
-
-let validator = roman => {
-    const characters = Array.from(roman);
-    const lettersCorrect = ["I", "V", "X", "L", "C", "D", "M"];
-    for (let character of characters) {
-        if (lettersCorrect.includes(character) == false) {
-            return false;
-        }
-    }
-    return true;
-}
-console.log(validator('MCMXCIX'));
-
-/* Crear una función para pasar de árabes a romanos*/
-
-let arabicToRoman = number => {
-    switch (number) {
-        case 1:
-            return 'I';
-        case 2:
-            return 'II';
-        case 3:
-            return 'III';
-        case 4:
-            return 'IV';
-        case 5:
-            return 'V';
-        case 6:
-            return 'VI';
-        case 7:
-            return 'VII';
-        case 8:
-            return 'VIII';
-        case 9:
-            return 'IX';
-        case 10:
-            return 'X';
-        case 50:
-            return 'L';
-        case 100:
-            return 'C';
-        case 500:
-            return 'D';
-        case 1000:
-            return 'M';
-        default:
-            console.log('Enter a number 1,5,6,7,8,9,10,50,100,500,1000');
-
-    }
-}
-console.log(arabicToRoman(10));
